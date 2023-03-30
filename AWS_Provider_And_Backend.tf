@@ -1,14 +1,14 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
+      source  = "hashicorp/gcp"
       version = "~> 3.0"
     }
   }
 }
 
 # Configure the AWS Provider
-provider "aws" {
+provider "gcp" {
   region = "us-east-1"
   access_key = ""
   secret_key = ""
